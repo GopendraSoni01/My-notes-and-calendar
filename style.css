@@ -1,0 +1,214 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; /* Updated font */
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f4f8; /* Softer background color */
+  border-radius: 10px;
+  border: 2px solid #ccc; /* Slightly darker border color */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 255, 0, 0.5); /* Neon lighting effect */
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Slightly larger for emphasis */
+  font-family: 'Poppins', sans-serif; /* Stylish font for header */
+}
+
+/* Date and Time Styling */
+#date-time {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Calendar Container Styling */
+.calendar-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Calendar Styling */
+#calendar {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  background: url('../images/august.jpg') no-repeat center center; /* Add your seasonal background image here */
+  background-size: cover; /* Ensures the background covers the whole calendar */
+  border-radius: 10px;
+  border: 1px solid #ddd; /* Lighter border color for a clean look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff; /* Ensures text is readable on the background */
+  padding: 15px;
+}
+
+/* Calendar Text Styling */
+#calendar h2,
+#calendar p {
+  margin: 0;
+  color: #fff; /* Adjust text color to be readable against the background */
+}
+
+/* Optional: Adjusting Calendar Header */
+#calendar h2 {
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif; /* Stylish font for the header */
+}
+
+/* Optional: Adjusting Calendar Events */
+#calendar .event {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for events */
+  border-radius: 5px;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+/* Event Form Styling */
+#event-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#event-title,
+#event-description {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Lighter border color */
+  margin: 0 auto 10px auto;
+  font-size: 16px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa; /* Light gray background color */
+}
+
+#event-title {
+  margin-bottom: 10px;
+}
+
+#event-description {
+  resize: vertical;
+}
+
+/* Save Event Button Styling */
+#save-event-btn {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto;
+}
+
+#save-event-btn:hover {
+  background-color: #218838;
+}
+
+/* Events Container Styling */
+#events-container {
+  margin-bottom: 20px;
+}
+
+/* Notes Container Styling */
+#notes-container {
+  margin-bottom: 20px;
+}
+
+/* Add Note Section Styling */
+#add-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#note-text {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Lighter border color */
+  margin-bottom: 10px;
+  resize: none;
+  font-size: 16px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa; /* Light gray background color */
+}
+
+#add-btn {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Note Card Styling */
+.note-card {
+  background-color: #ffffff; /* White background color */
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Lighter border color */
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+  padding: 7px 15px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Event Card Styling */
+.event-card {
+  background-color: #dd9999; /* White background color */
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Lighter border color */
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-card p {
+  font-size: 16px;
+  color: #555;
+}

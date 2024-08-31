@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Notes & Calendar App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap">
+    
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>My Notes & Calendar</h1>
+        <div id="date-time"></div>
+        <div class="calendar-container">
+            <input type="text" id="calendar" placeholder="Select date">
+        </div>
+        <div id="event-form">
+            <h2>Add Event</h2>
+            <input type="text" id="event-title" placeholder="Event Title">
+            <textarea id="event-description" placeholder="Event Description" rows="3"></textarea>
+            <button id="save-event-btn">Save Event</button>
+        </div>
+        <div id="events-container"></div>
+        <div id="notes-container"></div>
+        <div id="add-note">
+            <textarea id="note-text" placeholder="Write your note here..." rows="5"></textarea>
+            <button id="add-btn">Add Note</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
